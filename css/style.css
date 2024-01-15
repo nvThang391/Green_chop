@@ -1,0 +1,121 @@
+:root {
+  --grey-1000: #3d3c3c;
+  --grey-900: #515151;
+  --grey-800: #656565;
+  --grey-700: #7a7a7a;
+  --grey-600: #8e8e8e;
+  --grey-500: #a3a3a3;
+  --grey-400: #b7b7b7;
+  --grey-300: #cbcbcb;
+  --grey-200: #e0e0e0;
+  --grey-100: #f4f4f4;
+  --green-1000: #216000;
+  --green-900: #2e8900;
+  --green-800: #46b20f;
+  --green-700: #63db25;
+  --green-600: #81ff41;
+  --green-500: #98ff64;
+  --green-400: #aeff86;
+  --green-300: #c5ffa8;
+  --green-200: #dcffca;
+  --green-100: #f2ffec;
+  --orange-1000: #662400;
+  --orange-900: #8e3300;
+  --orange-800: #b74200;
+  --orange-700: #e05000;
+  --orange-600: #ff6916;
+  --orange-500: #ff8440;
+  --orange-400: #ff9f6a;
+  --orange-300: #ffba94;
+  --orange-200: #ffd5bd;
+  --orange-100: #fff0e7;
+  --main-color: var(--green-800);
+  --content: #2c2c2c;
+  --white: #fff;
+  --max-width: 1440px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: inter, sans-serif;
+  color: #2c2c2c;
+  line-height: 1.27;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+a:hover {
+  color: #46b20f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.header {
+  padding: 20px 0;
+}
+.header .container {
+  width: 1600px;
+  margin: 0 auto;
+}
+.header .row {
+  align-items: center;
+}
+.header .header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .header-nav .nav-links > ul {
+  display: flex;
+  gap: 0 50px;
+}
+.header .header-nav .nav-links > ul a {
+  font-weight: 600;
+  font-size: 16px;
+}
+.header .header-nav .nav-links > ul .active > a, .header .header-nav .nav-links > ul li:hover > a {
+  color: #46b20f;
+}
+.header .header-nav .cart-icon {
+  padding: 0 50px;
+}
+.header .header-nav .cart-icon a {
+  position: relative;
+}
+.header .header-nav .cart-icon span {
+  color: var(--white);
+  background-color: #ff6916;
+  position: absolute;
+  top: -21px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 22px;
+}
+
+/*# sourceMappingURL=style.css.map */

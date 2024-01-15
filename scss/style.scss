@@ -1,0 +1,61 @@
+@import 'partials/variables';
+@import 'partials/root';
+@import 'partials/reset';
+
+// 
+.header{
+    padding: 20px 0;
+    .container{
+        width: 1600px;
+        margin: 0 auto;
+    }
+    .row{
+        align-items: center;
+        
+    }
+
+    .header-nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .nav-links{
+            >ul{
+                display: flex;
+                gap: 0 50px;
+                a{
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                .active{
+                    >a{
+                        color: $primaryColor;
+                    }
+                }
+                li{
+                    &:hover{
+                        @extend .active
+                    }
+                }
+            }
+        }
+        .cart-icon{
+            padding: 0 50px;
+            a{
+                position: relative;
+            }
+            span{
+                color: var(--white);
+                background-color: #ff6916;
+                position: absolute;
+                top: -21px;
+                right: -8px;
+                width: 22px;
+                height: 22px;
+                font-size: 14px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 22px;
+            }
+        }
+    }
+}
