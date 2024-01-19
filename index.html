@@ -29,8 +29,13 @@
     <header>
       <div class="container">
         <div class="row">
+          <div class="col-lg-4">
+            <label for="nav-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+          </div>
           <!-- col-2 -->
-          <div class="col-2">
+          <div class="col-2 col-lg-4">
             <div class="logo">
               <a href="#">
                 <img src="./images/logo_greenchop.png" alt="logo" />
@@ -38,9 +43,11 @@
             </div>
           </div>
           <!-- end-cl2 -->
-          <div class="col-10">
+          <div class="col-10 col-lg-4">
             <div class="links-action">
               <!--  -->
+              <input type="checkbox" id="nav-toggle" hidden />
+              <label for="nav-toggle" class="overlay"></label>
               <nav class="links-nav">
                 <ul>
                   <li><a href="#" class="active">Trang Chủ</a></li>
@@ -73,8 +80,8 @@
       <div class="container">
         <div class="row">
           <!--  -->
-          <div class="col-6 slogan">
-            <div class="slogan-inner">
+          <div class="col-6 col-xl-12">
+            <div class="slogan">
               <h2>GreenChop: Tiện gấp dễ gắp</h2>
               <h1>AN TOÀN HƠN GIỮA MÙA COVID</h1>
               <p>
@@ -86,19 +93,165 @@
             </div>
           </div>
           <!-- end slogan -->
-          <div class="col-6 hero-banner">
-            <div class="background-banner">
+          <div class="col-6 col-xl-12">
+            <div class="hero-banner">
               <div class="hero-img">
-                <img src="./images/hero_img_greenchop.png" alt="greenchop" />
+                <img src="./images/hero_img_greenchop.png" alt="" />
               </div>
-              <span
-                >green <br />
-                chop</span
-              >
+              <span>green <br />chop</span>
             </div>
           </div>
           <!-- end hero banner -->
         </div>
+      </div>
+    </section>
+    <!-- end hero -->
+    <section id="achievement">
+      <div class="container">
+        <div class="achievement-text">
+          <h2>GreenChop: Giữ an toàn trong từng bữa ăn của người Việt</h2>
+          <p>
+            Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng ý
+            tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu trong
+            mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán ăn...
+          </p>
+        </div>
+        <div class="achievement-items">
+          <!--  -->
+          <div class="row">
+            <!--  -->
+            <div class="col-3 col-xl-12">
+              <div class="item i1">
+                <div class="quality-icon">
+                  <img src="./icons/quality-white.svg" alt="" />
+                </div>
+                <span class="number">1000+</span>
+                <span class="text">Hộ gia đình tin dùng GreenChop </span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-4 col-xl-12">
+              <div class="item i2">
+                <div class="quality-icon">
+                  <img src="./icons/quality-white.svg" alt="" />
+                </div>
+                <span class="number">600+</span>
+                <span class="text"
+                  >Nhà hàng đã phục vụ GreenChop cho thực khách</span
+                >
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-3 col-xl-12">
+              <div class="item i3">
+                <div class="quality-icon">
+                  <img src="./icons/quality-white.svg" alt="" />
+                </div>
+                <span class="number">20+</span>
+                <span class="text">Tỉnh thành được GreenChop phủ sóng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end achi -->
+    <section id="product">
+      <div class="container">
+        <h2>Sản Phẩm</h2>
+        <div class="list-product">
+          <div class="row">
+            <!--  -->
+            <div class="col-4">
+              <div class="box-product">
+                <div class="img-product">
+                  <img src="./images/cake.png" alt="" />
+                </div>
+                <div class="info-product">
+                  <div class="name">Combo<br />Quán ăn</div>
+                  <div class="quantity">1 Thùng 1000 đôi</div>
+                  <div class="price">Giá: <span>600.000</span>vnd</div>
+                </div>
+                <div class="buy-btn"><a href="#!">Thêm vào giỏ hàng</a></div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-4">
+              <div class="box-product">
+                <div class="img-product">
+                  <img src="./images/dice.png" alt="" />
+                </div>
+                <div class="info-product">
+                  <div class="name">Combo<br />Quán ăn - nhà hàng</div>
+                  <div class="quantity">1 Thùng 2000 đôi</div>
+                  <div class="price">Giá: <span>1.200.000</span>vnd</div>
+                </div>
+                <div class="buy-btn"><a href="#!">Thêm vào giỏ hàng</a></div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-4">
+              <div class="box-product">
+                <div class="img-product">
+                  <img src="./images/game.png" alt="" />
+                </div>
+                <div class="info-product">
+                  <div class="name">
+                    Combo Quán ăn<br />Nhà hàng - Khách sạn
+                  </div>
+                  <div class="quantity">1 Thùng 3000 đôi</div>
+                  <div class="price">Giá: <span>1.800.000</span>vnd</div>
+                </div>
+                <div class="buy-btn"><a href="#!">Thêm vào giỏ hàng</a></div>
+              </div>
+            </div>
+            <!-- r2 -->
+            <div class="col-4">
+              <div class="box-product">
+                <div class="img-product">
+                  <img src="./images/cake.png" alt="" />
+                </div>
+                <div class="info-product">
+                  <div class="name">Combo<br />Quán ăn</div>
+                  <div class="quantity">1 Thùng 1000 đôi</div>
+                  <div class="price">Giá: <span>600.000</span>vnd</div>
+                </div>
+                <div class="buy-btn"><a href="#!">Thêm vào giỏ hàng</a></div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-4">
+              <div class="box-product">
+                <div class="img-product">
+                  <img src="./images/dice.png" alt="" />
+                </div>
+                <div class="info-product">
+                  <div class="name">Combo<br />Quán ăn - nhà hàng</div>
+                  <div class="quantity">1 Thùng 2000 đôi</div>
+                  <div class="price">Giá: <span>1.200.000</span>vnd</div>
+                </div>
+                <div class="buy-btn"><a href="#!">Thêm vào giỏ hàng</a></div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-4">
+              <div class="box-product">
+                <div class="img-product">
+                  <img src="./images/game.png" alt="" />
+                </div>
+                <div class="info-product">
+                  <div class="name">
+                    Combo Quán ăn<br />Nhà hàng - Khách sạn
+                  </div>
+                  <div class="quantity">1 Thùng 3000 đôi</div>
+                  <div class="price">Giá: <span>1.800.000</span>vnd</div>
+                </div>
+                <div class="buy-btn"><a href="#!">Thêm vào giỏ hàng</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
       </div>
     </section>
   </body>
