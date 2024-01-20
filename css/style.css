@@ -482,7 +482,7 @@ header label {
   margin: 0 auto;
 }
 #product .container .row {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 96px 0;
 }
@@ -501,17 +501,6 @@ header label {
   width: 269px;
   height: 356px;
   position: relative;
-}
-#product .list-product .box-product .img-product::before {
-  content: "";
-  display: block;
-  width: 269px;
-  height: 269px;
-  border-radius: 50%;
-  background-color: var(--green-200);
-  position: absolute;
-  inset: 0;
-  z-index: -1;
 }
 #product .list-product .box-product .img-product img {
   position: relative;
@@ -562,6 +551,28 @@ header label {
   font-size: 16.6px;
   font-weight: 700;
   color: #fff;
+}
+#product .list-product .cake .img-product::before, #product .list-product .game .img-product::before {
+  content: "";
+  display: block;
+  width: 269px;
+  height: 269px;
+  background-color: var(--green-300);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+#product .list-product .dice .img-product::before {
+  content: "";
+  display: block;
+  width: 269px;
+  height: 269px;
+  background-color: var(--orange-300);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */

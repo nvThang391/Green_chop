@@ -482,7 +482,7 @@ header{
         max-width: 1200px;
         margin: 0 auto;
         .row{
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             gap: 96px 0
         }
@@ -492,30 +492,17 @@ header{
             font-size: 31.6px;
             font-weight: 800;
         }
-        .list-product{
-
-        }
     }
     .list-product{
         .box-product{
             display: flex;
             flex-direction: column;
             align-items: center;
+            //
             .img-product{
                 width: 269px;
                 height: 356px;
                 position: relative;
-                &::before{
-                    content: "";
-                    display: block;
-                    width: 269px;
-                    height: 269px;
-                    border-radius: 50%;
-                    background-color: var(--green-200);
-                    position: absolute;
-                    inset: 0;
-                    z-index: -1;
-                }
                 img{
                     position: relative;
                     top: 114px;
@@ -523,7 +510,6 @@ header{
                     translate: -50% 0;
                 }
             }
-            // 
             .info-product{
                 margin-top: 18px;
                 .name{
@@ -571,5 +557,37 @@ header{
                 }
             }
         }
+        .cake , .game{
+            .img-product{
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 269px;
+                    height: 269px;
+                    background-color: var(--green-300);
+                    border-radius: 50%;
+                    position: absolute;
+                    inset: 0;
+                    z-index: -1;
+                }
+            }
+        }
+        .dice{
+            .img-product{
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 269px;
+                    height: 269px;
+                    background-color: var(--orange-300);
+                    border-radius: 50%;
+                    position: absolute;
+                    inset: 0;
+                    z-index: -1;
+                }
+            }
+        }
     }
 }
+// 
+
